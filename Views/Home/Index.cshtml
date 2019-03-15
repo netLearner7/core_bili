@@ -1,8 +1,36 @@
-﻿@{
+﻿@using core_bili.Myserver
+@model List<student>
+@{
     ViewData["Title"] = "Home Page";
-}
+ }
+
+
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+    <div>
+        <form asp-action="ff" method="post">
+            <input type="text" name="a" value="" />
+            <input type="text" name="b" value="" />
+            <input type="date" name="c" value="" />
+            <input type="submit" name="ff" id="ff" value="sss" />
+        </form>
+    </div>
+
+
+    <partial name="_index1" for="@Model" />
+
+
+    @await Component.InvokeAsync("Welcome")
+    <vc:welcome></vc:welcome>
+
+
 </div>
+<script>
+    $('#ff').click(function ff() {
+        alert('ssssss')
+    })
+</script>

@@ -1,0 +1,13 @@
+﻿@using core_bili.Myserver;
+@model List<student>
+
+
+@{
+
+    foreach (var item in Model)
+    {
+        @item.id @item.name
+        <br />
+    }
+
+}
