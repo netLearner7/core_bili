@@ -60,3 +60,5 @@ E:\core_bili\obj\Debug\netcoreapp2.2\core_bili.pdb
 E:\core_bili\obj\Debug\netcoreapp2.2\core_bili.csproj.CopyComplete
 E:\core_bili\obj\Debug\netcoreapp2.2\Razor\Views\Home\_Index1.g.cshtml.cs
 E:\core_bili\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Welcome\Defalut.g.cshtml.cs
+E:\core_bili\obj\Debug\netcoreapp2.2\Razor\Views\Acctou\Login.g.cshtml.cs
+E:\core_bili\obj\Debug\netcoreapp2.2\Razor\Views\Acctou\Register.g.cshtml.cs

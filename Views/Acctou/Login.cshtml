@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+@using core_bili.Models
+@model LoginViewModel
+
+<h1>Login</h1>
+<hr />
+
+<form asp-action="LoginPost" method="post" >
+    <div>
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <div>
+        <label asp-for="PassWord"></label>
+        <input type="text" asp-for="PassWord" />
+        <span asp-validation-for="PassWord"></span>
+    </div>
+
+    <input type="submit" name="Login" value="提交" />
+
+    <div asp-validation-summary="All"></div>
+
+</form>
