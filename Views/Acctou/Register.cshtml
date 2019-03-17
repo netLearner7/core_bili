@@ -4,9 +4,9 @@
 }
 
 @using core_bili.Models
-@model RegisterViewModel
+@model User
 
-<h1>Login</h1>
+<h1>注册</h1>
 <hr />
 
 <form asp-action="LoginPost" method="post">
@@ -18,7 +18,7 @@
 
     <div>
         <label asp-for="PassWord"></label>
-        <input type="text" asp-for="PassWord" />
+        <input  asp-for="PassWord" />
         <span asp-validation-for="PassWord"></span>
     </div>
 

@@ -14,13 +14,12 @@ namespace core_bili.ef
 
         }
 
-        public DbSet<LoginViewModel> logins { get; set; }
+        public DbSet<User> logins { get; set; }
 
-        public DbSet<RegisterViewModel> registers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
-            modelBuilder.Entity<LoginViewModel>().ToTable(nameof(logins));
-            modelBuilder.Entity<RegisterViewModel>().ToTable(nameof(registers));
+            modelBuilder.Entity<User>().ToTable(nameof(User));
+
         }
     }
 }
